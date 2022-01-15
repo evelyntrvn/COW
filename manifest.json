@@ -2,12 +2,13 @@
     "name": "COW",
     "description": "Calendar Outlook to When2Meet",
     "version": "1.0",
-    "manifest_version": 3,
+    "manifest_version": 2,
     "background": {
-        
+        "scripts": ["./background.js"]
       },
       "permissions": ["storage"],
-      "action": {
-        "default_popup": "UI/popup.html"
-      }
+      "browser_action": {
+        "default_popup": "popup.html"
+      },
+      "content_security_policy": "script-src 'self' https://cdn.firebase.com https://apis.google.com https://www.gstatic.com; object-src 'self'"
   }
