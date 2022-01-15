@@ -2,5 +2,12 @@
     "name": "COW",
     "description": "Calendar Outlook to When2Meet",
     "version": "1.0",
-    "manifest_version": 3
+    "manifest_version": 3,
+    "background": {
+        
+      },
+      "permissions": ["storage"],
+      "action": {
+        "default_popup": "UI/popup.html"
+      }
   }
